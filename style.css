@@ -1,0 +1,87 @@
+.header{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .soccer{
+    text-transform: uppercase;
+    margin-left:3rem;
+    font-size: 3em;
+  }
+  
+  .buttons{
+    display: flex;
+  }
+  ul>li{
+    border-radius: 10px;
+    color: white;
+    list-style:none;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: purple;
+    cursor: pointer;
+    transition: background-color 1s;
+  }
+  
+  li:hover{
+    background-color: red;
+  }
+  
+  .nav{
+    
+    display:flex;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  body {
+    margin:0px;
+    padding:0;
+    font-family: system-ui;
+  }
+  
+  .common {
+    padding: 90px;
+    line-height: 2;
+    margin: 20px;
+    color: white;
+    border-radius: 15px;
+    
+  }
+  .box {
+    --mask:
+      radial-gradient(84.73px at 50% 117.50px,#000 99%,#0000 101%) calc(50% - 94px) 0/188px 51% repeat-x,
+      radial-gradient(84.73px at 50% -70.5px,#0000 99%,#000 101%) 50% 47px/188px calc(51% - 47px) repeat-x,
+      radial-gradient(84.73px at 50% calc(100% - 117.50px),#000 99%,#0000 101%) calc(50% - 94px) 100%/188px 51% repeat-x,
+      radial-gradient(84.73px at 50% calc(100% + 70.50px),#0000 99%,#000 101%) 50% calc(100% - 47px)/188px calc(51% - 47px) repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+  .left{
+    /*background-color: green;*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,36,121,0.4962359943977591) 37%, rgba(38,136,49,1) 56%, rgba(0,212,255,1) 100%);
+  }
+  
+  .right {
+      background-image: linear-gradient(to right,red, blue)
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-wrap: wrap-reverse;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      flex-wrap: nowrap;
+    }
+  }
